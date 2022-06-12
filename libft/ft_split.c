@@ -6,7 +6,7 @@
 /*   By: kakiba <kotto555555@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 22:51:38 by kakiba            #+#    #+#             */
-/*   Updated: 2022/06/01 23:39:57 by kakiba           ###   ########.fr       */
+/*   Updated: 2022/06/12 19:48:03 by kakiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,17 +42,4 @@ char	**ft_split(char const *s, char c)
 	}
 	printf("1\n");
 	return (nptr);
-}
-
-int	main(void)
-{
-	char	**s;
-
-	s = ft_split("ababa,,,ba,b", ',');
-
-	for (int i = 0; i < 2; i++)
-	{
-		printf("%s\n", s[i]);
-	}
-	return (0);
 }

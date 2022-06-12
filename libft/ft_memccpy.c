@@ -17,12 +17,3 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	}
 	return (NULL);
 }
-
-int main(void)
-{
-	char str[5];
-
-	ft_memccpy(str, "okey", 'e', 5);
-
-	printf("%s", str);
-}

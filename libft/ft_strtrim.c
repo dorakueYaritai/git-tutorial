@@ -26,10 +26,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s2 = ft_substr(s1, start, i - start + 1);
 	return (s2);
 }
-
-int	main(void)
-{
-	char	*s1;
-	s1 = ft_strtrim("1243AAA321", "123");
-	printf("%s",s1);
-}

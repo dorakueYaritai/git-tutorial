@@ -84,25 +84,6 @@ int	index_check(char c, int base)
 		return (-1);
 }
 
-int main(void)
-{
-	// int	*a;
-	// int	b;
-	// a = NULL;
-	// printf("%p\n", a);
-	// a = &b;
-	// *a = 1;
-	// printf("%p\n", &a);
-	// printf("%p\n", a);
-	// printf("%d\n", *a);
-	// (void) argc;
-	// printf("%d\n", ft_atoi(argv[1]));
-	printf("%ld\n", ft_strtol("1a1", (char**)NULL, 10));
-	// printf("%ld\n", strtol("Aa", (char**)NULL, 13));
-	printf("%ld\n", ft_strtol("--", (char**)NULL, 10));//MAXの処理
-	printf("%ld\n", ft_strtol("    -5632", (char**)NULL, 10));
-	return 0;
-}
 
 // int		ft_atoi(const char *str)
 // {

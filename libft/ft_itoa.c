@@ -6,7 +6,7 @@
 /*   By: kakiba <kotto555555@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/04 17:02:07 by kakiba            #+#    #+#             */
-/*   Updated: 2022/06/04 17:58:45 by kakiba           ###   ########.fr       */
+/*   Updated: 2022/06/12 19:46:33 by kakiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,4 @@ char	*ft_min(void)
 	s = malloc(11);
 	s = "-2147483648";
 	return (s);
-}
-
-int	main(void)
-{
-	char	*s = ft_itoa(-2147483648);
-	printf("%s\n", s);
-	printf("%s\n", ft_itoa(2147483648));
-	return (0);
 }
