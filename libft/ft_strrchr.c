@@ -9,10 +9,10 @@ char	*ft_strrchr(const char *s, int c)
 	while (s[i])
 	{
 		if (s[i] == (char)c)
-			ptr = s + i;
+			ptr = (char *)s + i;
 		i++;
 	}
 	if (s[i] == (char)c)
-		ptr = s + i;
+		ptr = (char *)s + i;
 	return (ptr);
 }

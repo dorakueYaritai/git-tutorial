@@ -3,6 +3,7 @@
 // int		ft_strlen(char *str);
 // char	*ft_strcpy(char *dest, char *s1);
 // void	set_null(char *str, int len);
+char	*ft_strcpy(char *dest, char const *s1);
 
 char	*ft_strdup(const char *s1)
 {
@@ -30,19 +31,19 @@ char	*ft_strdup(const char *s1)
 // 	return (i);
 // }
 
-// char	*ft_strcpy(char *dest, char *s1)
-// {
-// 	int	i;
+char	*ft_strcpy(char *dest, char const *s1)
+{
+	int	i;
 
-// 	i = 0;
-// 	while (s1[i] != '\0')
-// 	{
-// 		dest[i] = src[i];
-// 		i ++;
-// 	}
-// 	dest[i] = '\0';
-// 	return (dest);
-// }
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		dest[i] = s1[i];
+		i ++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}
 
 // void	set_null(char *str, int len)
 // {
