@@ -51,5 +51,10 @@ fclean:
 	rm $(NAME) $(OBJS)
 
 re:fclean all
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
+
 # $(OBJS):
 # 	$(CC) $(CFLAGS) -c $(SRCS) -o $(@:%.c=%.o)
